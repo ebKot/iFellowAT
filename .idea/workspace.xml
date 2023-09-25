@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d52e050d-2e7e-4dc5-9682-47418b0f867d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CssXpathTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Elements/CreateIssueDialogElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Elements/DashboardPageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Elements/LoginPageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Elements/MyIssuePageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Elements/TestProjectPageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Elements/TestSeleniumPageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Hooks/WebHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Steps/CreateIssueDialogSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Steps/DashboardPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Steps/LoginPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Steps/MyIssuePageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Steps/TestProjectPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Steps/TestSeleniumPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/chromedriver.exe" afterDir="false" />
+    <list default="true" id="d52e050d-2e7e-4dc5-9682-47418b0f867d" name="Changes" comment="init commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +24,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/IntelliJProjects/iFellowAT/src/test/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IntelliJProjects/iFellowAT/src/test/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IntelliJProjects\iFellowAT\src\test\java" />
@@ -60,7 +44,7 @@
       <recent name="Hooks" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CssXpathTest">
+  <component name="RunManager" selected="JUnit.CssXpathTest.loginTest">
     <configuration name="CssXpathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="iFellowAT" />
       <option name="PACKAGE_NAME" value="" />
@@ -82,8 +66,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CssXpathTest.loginTest" />
         <item itemvalue="JUnit.CssXpathTest" />
         <item itemvalue="JUnit.CssXpathTest.loginTest" />
+        <item itemvalue="JUnit.CssXpathTest" />
       </list>
     </recent_temporary>
   </component>
