@@ -10,11 +10,11 @@ public class CreateIssueDialogElements {
     public static SelenideElement createButton = $x("//a[@id='create_link']");
 
     // Поле Тема
-    public static SelenideElement summaryField = $x("//label[text()='Тема ']//following-sibling::input");
+    public static SelenideElement captionField = $x("//label[text()='Тема ']//following-sibling::input");
 
     // Поле Описание
-    public static SelenideElement summaryDescriptionFrame = $x("//div[@id='description-wiki-edit']//iframe");
-    public static SelenideElement summaryDescription = $x("//body[@data-id='mce_0']//p");
+    public static SelenideElement descriptionFrame = $x("//div[@id='description-wiki-edit']//iframe");
+    public static SelenideElement descriptionField = $x("//body[@data-id='mce_0']//p");
 
     // Исправить в версиях
     public static SelenideElement fixVersion20 = $x("//div[contains(@class,'versionspicker')]//child::label[@for='fixVersions']//following-sibling::select//descendant::option[contains(text(),'Version 2.0')]");

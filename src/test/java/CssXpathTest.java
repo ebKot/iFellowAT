@@ -1,32 +1,30 @@
 import Hooks.WebHooks;
 import org.junit.jupiter.api.Test;
 
-import static Steps.CreateIssueDialogSteps.createIssueAsserts;
-import static Steps.CreateIssueDialogSteps.createIssueFunc;
-import static Steps.DashboardPageSteps.goToProjectAsserts;
-import static Steps.DashboardPageSteps.goToProjectFunc;
-import static Steps.LoginPageSteps.loginAsserts;
-import static Steps.LoginPageSteps.loginFunc;
-import static Steps.MyIssuePageSteps.runThroughStatusesAsserts;
-import static Steps.MyIssuePageSteps.runThroughStatusesFunc;
-import static Steps.TestProjectPageSteps.issuesQuantityAsserts;
-import static Steps.TestProjectPageSteps.issuesQuantityFunc;
-import static Steps.TestSeleniumPageSteps.testSeleniumAsserts;
-import static Steps.TestSeleniumPageSteps.testSeleniumFunc;
+import static StepDefinition.CreateIssueDialogSteps.*;
+import static StepDefinition.DashboardPageSteps.goToProjectAsserts;
+import static StepDefinition.DashboardPageSteps.goToProjectFunc;
+import static StepDefinition.LoginPageSteps.loginAsserts;
+import static StepDefinition.LoginPageSteps.loginFunc;
+import static StepDefinition.MyIssuePageSteps.*;
+import static StepDefinition.TestProjectPageSteps.issuesQuantityAsserts;
+import static StepDefinition.TestProjectPageSteps.issuesQuantityFunc;
+import static StepDefinition.TestSeleniumPageSteps.testSeleniumAsserts;
+import static StepDefinition.TestSeleniumPageSteps.testSeleniumFunc;
 
 public class CssXpathTest extends WebHooks {
 
     // 1.	Авторизоваться в edujira.ifellow.ru
     @Test
     public void loginTest() {
-        loginFunc();
+        loginFunc("AT1", "Qwerty123");
         loginAsserts();
     }
 
     //2.	Перейти в проект TestProject
     @Test
     public void goToProjectTest() {
-        loginFunc();
+        loginFunc("AT1", "Qwerty123");
         goToProjectFunc();
         goToProjectAsserts();
     }
@@ -34,7 +32,7 @@ public class CssXpathTest extends WebHooks {
     // 3.	Проверить общее количество заведенных задач в проекте ( например в  строке ‘1 из 30’ )
     @Test
     public void issuesQuantityTest() {
-        loginFunc();
+        loginFunc("AT1", "Qwerty123");
         goToProjectFunc();
         issuesQuantityFunc();
         issuesQuantityAsserts();
@@ -43,18 +41,30 @@ public class CssXpathTest extends WebHooks {
     //4.	Перейти в задачу TestSelenium и проверить статус задачи и привязку в затронутой версии - Version 2.0
     @Test
     public void testSeleniumTest() {
-        loginFunc();
-        testSeleniumFunc();
+        loginFunc("AT1", "Qwerty123");
+        testSeleniumFunc("TestSelenium");
         testSeleniumAsserts();
     }
 
     //5.	Создать автотестом новый баг с описанием. Перевести задачу по статусам до закрытого.
     @Test
     public void createIssueTest() throws InterruptedException {
-        loginFunc();
-        createIssueFunc();
+        loginFunc("AT1", "Qwerty123");
+        createButtonFunc();
+        captionFieldFunc("Ошибка создания бага");
+        descriptionFieldFunc("1. Заполнить поля \n Нажать Создать");
+        fixVersion20Func();
+        priorityFieldFunc("Highest");
+        labelsFieldFunc("Xpath");
+        environmentFieldFunc("Windows 10, Google Chrome 117.0.5938.92");
+        selectVersion20Func();
+        assignButtonFunc();
+        confirmCreateButtonFunc();
         createIssueAsserts();
-        runThroughStatusesFunc();
+        linkNewIssueFunc();
+        workflowTransitionTakenFunc();
+        workflowTransitionFulfilledFunc();
+        workflowTransitionConfirmedFunc();
         runThroughStatusesAsserts();
     }
 

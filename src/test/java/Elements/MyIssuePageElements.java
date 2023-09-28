@@ -18,6 +18,6 @@ public class MyIssuePageElements {
 
     // Перевести задачу в статус "Подтверждено"
     public static SelenideElement workflowTransitionConfirmed = $x("//span[text()='Подтверждено']//parent::a");
-    public static SelenideElement workflowTransitionConfirmedButton = $x ("//input[@value='Подтверждено']");
+    public static SelenideElement workflowTransitionConfirmedButton = $x("//input[@value='Подтверждено']");
 
 }

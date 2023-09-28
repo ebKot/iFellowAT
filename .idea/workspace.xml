@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d52e050d-2e7e-4dc5-9682-47418b0f867d" name="Changes" comment="" />
+    <list default="true" id="d52e050d-2e7e-4dc5-9682-47418b0f867d" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/cucumber.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CssXpathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CssXpathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Elements/CreateIssueDialogElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Elements/CreateIssueDialogElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Elements/MyIssuePageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Elements/MyIssuePageElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hooks/WebHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hooks/WebHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/CreateIssueDialogSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/CreateIssueDialogSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/DashboardPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/DashboardPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LoginPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/LoginPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MyIssuePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/MyIssuePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/TestProjectPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/TestProjectPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/TestSeleniumPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/TestSeleniumPageSteps.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -21,6 +44,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2VtBHqqzKrQSRWpFS2CJVCPhKnm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,9 +69,28 @@
       <recent name="Hooks" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CssXpathTest.issuesQuantityTest">
+  <component name="RunManager" selected="JUnit.CssXpathTest">
+    <configuration name="Scenario: Авторизация" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/cucumber.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Cucumber" />
+      <option name="NAME_FILTER" value="^Авторизация$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Авторизация$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Авторизация" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CssXpathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="iFellowAT" />
+      <module name="Cucumber" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CssXpathTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -53,18 +98,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CssXpathTest.issuesQuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="iFellowAT" />
+    <configuration name="CssXpathTest.goToProjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cucumber" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CssXpathTest" />
-      <option name="METHOD_NAME" value="issuesQuantityTest" />
+      <option name="METHOD_NAME" value="goToProjectTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="CssXpathTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="iFellowAT" />
+      <module name="Cucumber" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CssXpathTest" />
       <option name="METHOD_NAME" value="loginTest" />
@@ -73,11 +118,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cucumber" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CssXpathTest.issuesQuantityTest" />
         <item itemvalue="JUnit.CssXpathTest" />
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Авторизация" />
         <item itemvalue="JUnit.CssXpathTest.loginTest" />
+        <item itemvalue="JUnit.CssXpathTest.goToProjectTest" />
       </list>
     </recent_temporary>
   </component>
@@ -102,5 +158,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>
