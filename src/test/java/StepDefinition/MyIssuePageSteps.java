@@ -12,7 +12,7 @@ import static Elements.CreateIssueDialogElements.linkNewIssue;
 import static Elements.TestSeleniumPageElements.statusValue;
 
 public class MyIssuePageSteps extends MyIssuePageElements {
-    @И("Открывается задача")
+    @И("Открывается задача по нажатию на ссылку")
     public static void linkNewIssueFunc() {
         // Открыть задачу
         linkNewIssue.shouldBe(Condition.visible, Duration.ofSeconds(15)).click();
