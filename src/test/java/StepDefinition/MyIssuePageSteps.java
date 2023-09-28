@@ -43,7 +43,7 @@ public class MyIssuePageSteps extends MyIssuePageElements {
         Thread.sleep(1000);
     }
 
-    @Тогда("Задача переводится в статус «ГОТОВО»")
+    @Тогда("Статус задачи отображается как «ГОТОВО»")
     public static void runThroughStatusesAsserts() {
         // Проверяем, что статус перешёл в "Готово", выводим его
         Assertions.assertEquals("ГОТОВО", statusValue.getText());
