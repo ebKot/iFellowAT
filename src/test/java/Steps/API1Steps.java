@@ -79,7 +79,6 @@ public class API1Steps {
             System.out.println("Эти персонажи находятся в одном месте");
         }
     }
-
     public static void assertSpecFunc() {
         Assertions.assertEquals(charSpec, lastCharacterSpec, "Разновидность персонажей различается");
         if (Objects.equals(charSpec, lastCharacterSpec)) {
