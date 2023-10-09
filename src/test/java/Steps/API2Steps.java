@@ -1,13 +1,14 @@
 package Steps;
 
+import Methods.APIMethods;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class API2Steps {
@@ -20,18 +21,8 @@ public class API2Steps {
         bodyJson.put("name", "Tomato");
         bodyJson.put("job", "Eat maket");
 
-        given()
-                .header("Content-type", "application/json")
-                .baseUri(uri2)
-                .contentType(ContentType.JSON)
-                .body(bodyJson.toString())
-                .when()
-                .post("/api/users")
-                .then()
-                .log().body()
-                .assertThat()
-                .statusCode(code2)
-                .body(matchesJsonSchemaInClasspath("jsonSchema.json")) // валидируем полученный response через json схему
-                .extract().response();
+        Response createUser = new APIMethods().POSTMethod(uri2, ContentType.JSON, bodyJson.toString(), "/api/users", code2);
+
+        createUser.then().assertThat().body(matchesJsonSchemaInClasspath("jsonSchema.json")); // валидируем полученный response через json схему
     }
 }
